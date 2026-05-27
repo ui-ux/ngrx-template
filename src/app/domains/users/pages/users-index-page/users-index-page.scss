@@ -1,0 +1,25 @@
+.users-index {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+  margin-bottom: 0.75rem;
+    a {
+    color: blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        }
+    }
+  }
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,21 @@
+<div class="users-index">
+  <h1>Users</h1>
+
+  @if (loading$ | async) {
+    <div class="loading">Loading users…</div>
+  }
+
+  @if (error$ | async; as error) {
+    <div class="error">{{ error }}</div>
+  }
+
+  @if (users$ | async; as users) {
+    <ul class="user-list">
+      @for (user of users; track user.id; let i = $index) {
+        <li>
+          <a [routerLink]="[user.id]">{{ i + 1 }} - {{ user.title }}</a>
+        </li>
+      }
+    </ul>
+  }
+</div>

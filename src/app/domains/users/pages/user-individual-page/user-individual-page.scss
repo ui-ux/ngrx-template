@@ -1,0 +1,25 @@
+.user-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.user-detail a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: blue;
+  text-decoration: none;
+}
+
+.user-detail a:hover {
+  text-decoration: underline;
+}
+
+.loading,
+.error,
+.empty {
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+}
